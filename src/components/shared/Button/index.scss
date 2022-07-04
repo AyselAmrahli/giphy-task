@@ -1,0 +1,11 @@
+@use '../../../assets/sass/main' as M;
+@use '../../../assets/sass/colors' as C;
+
+.app-button {
+  @include M.flexCenter;
+  background-color: transparent;
+  color: C.$dark_gray;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
