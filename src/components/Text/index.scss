@@ -1,0 +1,9 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.app-text {
+  font-size: M.$font-size-xxs;
+  color: C.$dark_gray;
+  margin: 0;
+  margin-bottom: 8px;
+}
