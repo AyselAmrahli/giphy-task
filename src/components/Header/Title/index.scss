@@ -1,0 +1,6 @@
+@use '../../../assets/sass/colors' as C;
+
+.app-header__title {
+  color: C.$dark-gray;
+  margin: 0;
+}
