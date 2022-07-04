@@ -11,12 +11,12 @@ type GifDetatilProps = {
 
 const GifDetail:FC<GifDetatilProps> = ({title, link, ageRestriction}) => {
   return (
-    <div className="gif-detail">
+    <div data-testid="app-gif-detail-wrapper" className="gif-detail">
       <div>
-        <Text content={title} />
-        <Text content={link} />
+        <Text dataTest={`app-text-${title}`} content={title} />
+        <Text dataTest={`app-text-${link}`} content={link} />
       </div>
-      <div className="gif-detail__rest">
+      <div data-testid="app-age-rest" className="gif-detail__rest">
         {ageRestriction}
       </div>
     </div>

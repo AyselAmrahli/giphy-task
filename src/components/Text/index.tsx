@@ -4,8 +4,9 @@ import './index.scss';
 
 type TextProps = {
   content: string;
+  dataTest?: string;
 }
 
-const Text:FC<TextProps>= ({content}) => <p className="app-text">{content}</p>
+const Text:FC<TextProps>= ({content, dataTest}) => <p data-testid={dataTest} className="app-text">{content}</p>
 
 export default memo(Text);
