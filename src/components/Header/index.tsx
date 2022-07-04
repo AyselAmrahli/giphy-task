@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import Back from './Back';
 
 import './index.scss';
@@ -18,4 +18,4 @@ const Header:FC<HeaderProps> = ({title}) => {
   );
 }
 
-export default React.memo(Header);
+export default memo(Header);

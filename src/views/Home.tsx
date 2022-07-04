@@ -25,18 +25,20 @@ const Home:FC = () => {
   })
 
   useEffect(() => {
-    dispatch(getRandomGif())
-    setInterval(() => {
-      dispatch(getRandomGif())
-    }, 10000)
-  }, [])
+    dispatch(getRandomGif());
+    const refetchGifs = setInterval(() => {
+      dispatch(getRandomGif());
+    }, 10000);
+
+    return () => clearInterval(refetchGifs);
+  }, []);
 
   useEffect(() => {
     const getData = setTimeout(() => {
       dispatch(getGifs(value))
-    }, 1000)
+    }, 1000);
 
-    return () => clearTimeout(getData)
+    return () => clearTimeout(getData);
   }, [value])
 
   const gifList = gifs?.map((gif: any) => (

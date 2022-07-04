@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { routes } from './const/constant';
 
 import Container from './components/shared/Container';
+import Loading from './components/Loading';
 
 import './App.scss';
 
@@ -17,11 +18,9 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Suspense fallback={<span>loading...</span>}>
+        <Suspense fallback={<Loading />}>
           <Router>
-            <Routes>
-              {routeList}
-            </Routes>
+            <Routes>{routeList}</Routes>
           </Router>
         </Suspense>
       </Container>

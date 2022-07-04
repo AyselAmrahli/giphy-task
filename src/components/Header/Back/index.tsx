@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import {ReactComponent as LeftIcon} from '../../../assets/images/icons/left.svg';
@@ -18,4 +18,4 @@ const Back:FC = () => {
   );
 }
 
-export default React.memo(Back);
+export default memo(Back);

@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, ReactNode } from 'react';
+import { FC, ReactElement, ReactNode, memo } from 'react';
 
 import './index.scss';
 
@@ -14,4 +14,4 @@ const Container:FC<ContainerProps> = ({children}) => {
   );
 }
 
-export default React.memo(Container);
+export default memo(Container);

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC, memo } from 'react';
 
 import './index.scss';
 
@@ -8,4 +8,4 @@ type TitleProps =  {
 
 const Title:FC<TitleProps> = ({content}) => <h3 className="app-header__title">{content}</h3>
 
-export default React.memo(Title);
+export default memo(Title);

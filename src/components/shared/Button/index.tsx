@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, ReactNode } from 'react';
+import { FC, ReactElement, ReactNode, memo } from 'react';
 
 import './index.scss';
 
@@ -8,11 +8,10 @@ type ButtonProps =  {
   className?: string;
 }
 
-const Button: FC<ButtonProps> = ({children, onClick, className = null}) => {
-  console.log('render')
+const Button: FC<ButtonProps> = ({children, onClick, className = '', ...props}) => {
   return (
     <button
-      className={`app-button ${className || ''}`}
+      className={`app-button ${className}`} {...props}
       onClick={onClick}
     >
       {children}
@@ -20,4 +19,4 @@ const Button: FC<ButtonProps> = ({children, onClick, className = null}) => {
   )
 }
 
-export default React.memo(Button)
+export default memo(Button)

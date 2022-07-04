@@ -1,24 +1,24 @@
-import React, { FC } from 'react';
+import { FC, memo, ChangeEvent } from 'react';
 import Button from '../Button';
 import { ReactComponent as CancelIcon } from '../../../assets/images/icons/cancel.svg';
 
 import './index.scss';
 
-interface IProps {
+type SearchFieldProps = {
 	placeholder?: string;
 	defaultValue?: string;
 	onChange: (value: string) => void;
   onFocus?: () => void;
 }
 
-const SearchField: FC<IProps> = ({placeholder = '', defaultValue, onChange, onFocus}) => {
+const SearchField: FC<SearchFieldProps> = ({placeholder = '', defaultValue, onChange, onFocus}) => {
   return (
     <div className="app-search">
       <input
         type="text"
         value={defaultValue}
         placeholder={placeholder}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => onChange(e.target.value)}
+        onChange={(e: ChangeEvent<HTMLInputElement>) => onChange(e.target.value)}
         onFocus={onFocus}
       />
       {defaultValue &&
@@ -29,4 +29,4 @@ const SearchField: FC<IProps> = ({placeholder = '', defaultValue, onChange, onFo
   )
 }
 
-export default React.memo(SearchField);
+export default memo(SearchField);

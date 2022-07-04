@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC, memo } from 'react';
 
 import './index.scss';
 
@@ -8,4 +8,4 @@ type TextProps = {
 
 const Text:FC<TextProps>= ({content}) => <p className="app-text">{content}</p>
 
-export default React.memo(Text);
+export default memo(Text);
