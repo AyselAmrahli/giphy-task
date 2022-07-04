@@ -1,88 +1,52 @@
-# Picnic Recruitment Task
+# Getting Started with Create React App
 
-Please read the following instructions carefully and make sure that you fulfil
-all requirements listed.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview
+# ENVIRONMENT
 
-This is a React programming assignment we've created specifically for our
-recruitment process.
-You were given a link to GitHub, which when you visited that link,
-created a private fork of this repository. Only you and developers at Picnic
-can see the code you push to this repository.
+Create a file called .env in the root of your project from .env.example
 
-High-level instructions:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. Read and follow the task specified below.
-2. Make a local clone of this repository on your machine, and do your work on a
-   branch other than `master`. Do not make any changes to the `master` branch.
-3. Push your changes as frequently as you like to `origin/your-branch-name`,
-   and create a pull request to merge your changes back into the `master`
-   branch. Don't merge your pull request. Once you're finished with the
-   assignment, we will do a code review of your pull request.
-4. When you're finished, [create and add][github-labels] the label `done` to
-   your pull request. This will notify us that your code is ready to be
-   reviewed. Please do **NOT** publish your solution on a publicly available
-   location (such as a public GitHub repository, your personal website, _et
-   cetera_).
+## Available Scripts
 
-This process closely mimics our actual development and review cycle. We hope
-you enjoy it!
+In the project directory, you can run:
 
-## Task
+### `npm start`
 
-We would like you to write code that will cover the functionality listed below and provide us with the source as well as the output of a React app that consists of two pages:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-![Wireframe][wireframe-image]
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Screen 1:
+### `npm test`
 
-Screen 1 has the following two functionalities:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. Displaying a random GIF:
-   - Upon opening the app, it should connect to the Giphy random API and display a random GIF as displayed in **Fig 1**.
-   - The random GIF displayed on this screen should be animated.
-   - Every 10 seconds a new random GIF should replace the previous loaded one. This should continue as long as the user has no search results displayed.
-   - **Screen 1** should also display the GIF title, link and an age restriction badge.
-2. Search Bar:
-   - Upon clicking the search bar, we start a live search after characters have been entered. This means that once the user has typed two characters, the search API should be called and not wait until the user pressed search.
-   - The returning results should be displayed as shown in **Fig 2**. The GIFs’ in the search results do not have to be animated and the list doesn’t have to include infinite scrolling.
-   - Tapping one of the list items should navigate the user to **Screen 2**.
-   - This screen should be able to retain its state, in case the user navigates back to it from **Screen 2**.
-   - On canceling the search, the screen should go back to displaying the random GIF.
+### `npm run build`
 
-### Screen 2:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Screen 2 only has the following functionality:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Displaying the GIF that was tapped:
-   - On **Screen 2** the tapped GIF should be displayed animated along with the title, link and age restriction badge as displayed in **Fig 3**.
-   - Upon tapping the back button, the user should be taken back to **Screen 1**.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Useful information:
+### `npm run eject`
 
-- API Documentation: https://developers.giphy.com/docs/
-- Use the following API Key: `7lJARDw74YrnPfvqfNWePduw0mNm0CBS`
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Extras:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- It is **not** allowed to use the GIPHY SDK.
-- It is allowed to use any other third party libraries you seem fit, but please attach a brief description of why you’ve selected it.
-- The app should be written in either Javascript or Typescript.
-- Please also provide a brief description of the overall app architecture and the reasoning behind picking it over any other possible alternative.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Grading Criteria:
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-You will be assessed on the following criteria:
+## Learn More
 
-- Architecture and approach
-- Execution
-- UX (mobile and desktop)
-- Testability
-- Code readability and style
-- Usage of git
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-_Thanks in advance for your time and interest in Picnic!_
-
-[wireframe-image]: https://imgur.com/Kja1rsy.png
-[github-labels]: https://help.github.com/articles/about-labels
+To learn React, check out the [React documentation](https://reactjs.org/).
