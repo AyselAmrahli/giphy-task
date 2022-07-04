@@ -1,0 +1,11 @@
+@use '../../assets/sass/main' as M;
+
+.gif {
+  cursor: pointer;
+  border-radius: M.$radius-main * 2;
+  overflow: hidden;
+  img {
+    width: M.$fullsize;
+    height: M.$fullsize;
+  }
+}

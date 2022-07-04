@@ -1,0 +1,15 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.gif-detail {
+  @include M.flexCenter;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  &__rest {
+    @include M.circle(48px);
+    @include M.flexCenter;
+    background-color: C.$purple;
+    color: C.$white;
+  }
+}

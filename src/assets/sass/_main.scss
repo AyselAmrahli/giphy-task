@@ -1,0 +1,23 @@
+// *** font sizes *** //
+$font-size-xxs: 14px;
+
+// *** height *** //
+$fullsize: 100%;
+
+// *** standarts *** //
+$container_width: 768px;
+
+// *** radius *** //
+$radius-main: 4px;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin circle($sq) {
+  width: $sq;
+  height: $sq;
+  border-radius: 50%;
+}
