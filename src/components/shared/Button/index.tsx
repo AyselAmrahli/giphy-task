@@ -1,9 +1,9 @@
-import { FC, ReactElement, ReactNode, memo } from 'react';
+import { FC, ReactNode } from 'react';
 
 import './index.scss';
 
 type ButtonProps =  {
-	children: string | ReactNode | ReactElement;
+	children: string | ReactNode;
 	onClick: any;
   className?: string;
 }
@@ -19,4 +19,4 @@ const Button: FC<ButtonProps> = ({children, onClick, className = '', ...props}) 
   )
 }
 
-export default memo(Button)
+export default Button

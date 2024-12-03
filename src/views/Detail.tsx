@@ -12,8 +12,8 @@ import Loading from '../components/Loading';
 
 
 const Detail:FC = () => {
-  let { id } = useParams();
-  let dispatch = useDispatch();
+  const { id } = useParams();
+  const dispatch = useDispatch();
   const gif = useSelector((state: RootState) => state.GifReducer.gifDetail)
 
   useEffect(() => {

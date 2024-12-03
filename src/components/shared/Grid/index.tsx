@@ -1,9 +1,9 @@
-import React, { FC, ReactElement, ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 
 import './index.scss';
 
 type GridProps =  {
-  children: ReactNode | ReactElement;
+  children: ReactNode;
 }
 
 const Grid:FC<GridProps> = ({children}) => {
